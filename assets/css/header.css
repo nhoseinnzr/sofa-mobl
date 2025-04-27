@@ -99,6 +99,12 @@ header {
   color: #fff;
   cursor: pointer;
 }
+.row-top .search-box .category i {
+  font-size: 24px;
+}
+.row-top .search-box .category .icon-angle-down {
+  font-size: 8px;
+}
 .row-top .search-box .category span {
   display: inline-block;
   margin: 0 10px;
@@ -116,7 +122,7 @@ header {
 }
 .row-top .btn-login i {
   margin-left: 5px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .btn-seller {
@@ -150,6 +156,13 @@ header {
 }
 .row-menus ul.menus > li i {
   transition: all ease 0.4s;
+  font-size: 9px;
+  margin-right: 10px;
+}
+.row-menus ul.menus > li em {
+  font-size: 24px;
+  margin-left: 8px;
+  color: #11205A;
 }
 .row-menus ul.menus > li .sub-menu {
   position: absolute;
@@ -192,9 +205,6 @@ header {
   opacity: 1;
   top: 100%;
   visibility: visible;
-}
-.row-menus ul.menus > li i {
-  margin-right: 8px;
 }
 .row-menus ul.menus > li .icon {
   margin-left: 8px;

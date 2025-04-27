@@ -1,11 +1,10 @@
 @use './variables' as *;
 @import "bootstrap.min.css";
-@import "all.min.css";
 @import "font";
+@import '../webfonts/iconly/iconly.min.css';
 @import "slider";
 @import "header.css";
 @import "footer";
-
 .title-titr {
   text-align: center;
   font-size: 32px;
@@ -78,9 +77,14 @@
     p {
       display: flex;
       align-items: center;
-      color: rgba(156, 156, 171, 1);
+      color:rgba(156, 156, 171, 1) !important;
       padding: 5px 0;
       font-size: 12px;
+
+      i{
+        font-size: 16px;
+        color: rgba(126, 128, 133, 1);
+      }
     }
 
     span.city {
@@ -176,6 +180,11 @@
     font-weight: bold;
     display: flex;
     align-items: center;
+    i{
+      font-size: 29px;
+      color: rgba(185, 149, 80, 1);
+      margin-left: 10px;
+    }
   }
 
   .btn-all {
@@ -199,6 +208,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    i{
+      font-size: 45px;
+      color: $color1;
+    }
   }
 
   span {
@@ -350,6 +363,9 @@
         font-size: 12px;
         i{
           color: rgba(55, 205, 250, 1);
+          &.icon-badge-check{
+            color: rgba(93, 210, 109, 1);
+          }
         }
       }
 

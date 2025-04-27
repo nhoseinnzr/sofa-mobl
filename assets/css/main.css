@@ -1,5 +1,6 @@
 @import "bootstrap.min.css";
 @import "all.min.css";
+@import '../webfonts/iconly/iconly.min.css';
 @import "swiper/swiper-bundle.min.css";
 @import "header.css";
 :root {
@@ -476,9 +477,13 @@ input:focus {
 .card-product .card-body p {
   display: flex;
   align-items: center;
-  color: rgb(156, 156, 171);
+  color: rgb(156, 156, 171) !important;
   padding: 5px 0;
   font-size: 12px;
+}
+.card-product .card-body p i {
+  font-size: 16px;
+  color: rgb(126, 128, 133);
 }
 .card-product .card-body span.city {
   font-size: 10px;
@@ -563,6 +568,11 @@ input:focus {
   display: flex;
   align-items: center;
 }
+.title h2 i {
+  font-size: 29px;
+  color: rgb(185, 149, 80);
+  margin-left: 10px;
+}
 .title .btn-all {
   margin-right: auto;
   padding: 10px 15px;
@@ -583,6 +593,10 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.box-why .icon i {
+  font-size: 45px;
+  color: #11205A;
 }
 .box-why span {
   text-align: center;
@@ -725,6 +739,9 @@ input:focus {
 }
 .section-best .item-best .content span i {
   color: rgb(55, 205, 250);
+}
+.section-best .item-best .content span i.icon-badge-check {
+  color: rgb(93, 210, 109);
 }
 
 .section-blog .blog-item {

@@ -59,6 +59,13 @@ header {
       color: #fff;
       cursor: pointer;
 
+      i{
+        font-size: 24px;
+      }
+      .icon-angle-down{
+        font-size: 8px;
+      }
+
       span {
         display: inline-block;
         margin: 0 10px;
@@ -79,7 +86,7 @@ header {
 
     i {
       margin-left: 5px;
-      font-size: 18px;
+      font-size: 24px;
     }
 
   }
@@ -117,6 +124,13 @@ header {
       cursor: pointer;
       i{
         transition: all ease .4s;
+        font-size: 9px;
+        margin-right: 10px;
+      }
+      em{
+        font-size: 24px;
+        margin-left: 8px;
+        color: $color1;
       }
 
       .sub-menu {
@@ -171,9 +185,6 @@ header {
         }
       }
 
-      i {
-        margin-right: 8px;
-      }
 
       .icon {
         margin-left: 8px;
