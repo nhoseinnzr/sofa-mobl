@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1745772591951");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1745772591951") format("woff2"), url("./iconly.woff?1745772591951") format("woff"), url("./iconly.ttf?1745772591951") format("truetype"), url("./iconly.svg?1745772591951#Iconly") format("svg");
+  src: url("./iconly.eot?1745944731955");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1745944731955") format("woff2"), url("./iconly.woff?1745944731955") format("woff"), url("./iconly.ttf?1745944731955") format("truetype"), url("./iconly.svg?1745944731955#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -141,4 +141,84 @@
 
 .icon-grid-square-circle:before {
   content: "\e01d";
+}
+
+.icon-angle-left:before {
+  content: "\e01e";
+}
+
+.icon-time:before {
+  content: "\e01f";
+}
+
+.icon-home-location:before {
+  content: "\e020";
+}
+
+.icon-material:before {
+  content: "\e021";
+}
+
+.icon-komod:before {
+  content: "\e022";
+}
+
+.icon-furniture:before {
+  content: "\e023";
+}
+
+.icon-fabric:before {
+  content: "\e024";
+}
+
+.icon-dimensions:before {
+  content: "\e025";
+}
+
+.icon-design:before {
+  content: "\e026";
+}
+
+.icon-badge-check2:before {
+  content: "\e027";
+}
+
+.icon-truck:before {
+  content: "\e028";
+}
+
+.icon-shopping-cart:before {
+  content: "\e029";
+}
+
+.icon-share:before {
+  content: "\e02a";
+}
+
+.icon-plus-square:before {
+  content: "\e02b";
+}
+
+.icon-phone-flip:before {
+  content: "\e02c";
+}
+
+.icon-like:before {
+  content: "\e02d";
+}
+
+.icon-heart:before {
+  content: "\e02e";
+}
+
+.icon-dislike:before {
+  content: "\e02f";
+}
+
+.icon-arrow-right:before {
+  content: "\e030";
+}
+
+.icon-info-circle:before {
+  content: "\e031";
 }

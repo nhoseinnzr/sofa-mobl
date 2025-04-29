@@ -1,5 +1,6 @@
 @import "bootstrap.min.css";
 @import "all.min.css";
+@import '../webfonts/iconly/iconly.min.css';
 @import "header.css";
 :root {
   --fontSize: 14px;
@@ -275,6 +276,10 @@ input:focus {
     display: flex;
   }
 }
+[class=icon], [class^=icon-], [class*=" icon-"] {
+  font-size: 20px;
+}
+
 .product {
   padding: 2rem 0;
 }
@@ -292,9 +297,10 @@ input:focus {
   align-items: center;
 }
 .breadcrumb-custom ul li span:after {
-  content: "\f104";
-  font-family: "Font Awesome 6 Pro";
-  margin-right: 6px;
+  content: "\e01e";
+  font-family: "Iconly" !important;
+  margin-right: 8px;
+  font-size: 10px;
 }
 .breadcrumb-custom ul li a {
   color: #3e3e3e;
@@ -364,6 +370,8 @@ input:focus {
   border: none;
   margin-left: 10px;
   font-size: 12px;
+  display: flex;
+  align-items: center;
 }
 .images-section .btns-fav-share button i {
   margin-left: 5px;
@@ -434,8 +442,10 @@ input:focus {
   display: flex;
   align-items: center;
 }
-.product-info .box-time > div img {
+.product-info .box-time > div i {
   margin-left: 5px;
+  font-size: 24px;
+  color: #11205A;
 }
 .product-info .box-time > div span {
   color: rgb(96, 98, 102);
@@ -453,8 +463,10 @@ input:focus {
   align-items: center;
   padding: 10px 0;
 }
-.product-info .info ul li img {
+.product-info .info ul li i {
   margin-left: 5px;
+  font-size: 24px;
+  color: rgb(50, 50, 50);
 }
 .product-info .info ul li span {
   color: #3e3e3e;
@@ -466,10 +478,11 @@ input:focus {
   color: rgb(15, 148, 242);
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-weight: 400;
 }
 .product-info .info button i {
   margin-right: 10px;
+  font-size: 10px;
 }
 .product-info .select-section {
   display: flex;
@@ -533,6 +546,10 @@ input:focus {
   border-color: rgb(61, 186, 78);
 }
 
+.icon-star {
+  font-size: 12px;
+}
+
 .product-left-box {
   border: 1px solid rgb(232, 234, 237);
   border-radius: 12px;
@@ -579,6 +596,14 @@ input:focus {
   padding: 5px 0;
   font-size: var(--fontSize);
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.product-left-box .label i {
+  margin-left: 8px;
+  font-size: 19px;
+  color: #11205A;
 }
 .product-left-box .user-info {
   display: flex;
@@ -614,8 +639,10 @@ input:focus {
 }
 .product-left-box .options li {
   padding: 7px 0;
+  display: flex;
+  align-items: center;
 }
-.product-left-box .options li i, .product-left-box .options li img {
+.product-left-box .options li i {
   color: #11205A;
   margin-left: 5px;
 }

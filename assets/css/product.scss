@@ -2,9 +2,15 @@
 @import "bootstrap.min.css";
 @import "all.min.css";
 @import "font";
+@import '../webfonts/iconly/iconly.min.css';
 @import "header.css";
 @import "footer";
 
+
+[class="icon"], [class^="icon-"], [class*=" icon-"] {
+
+  font-size: 20px;
+}
 
 .product {
   padding: 2rem 0;
@@ -24,9 +30,10 @@
         align-items: center;
 
         &:after {
-          content: "\f104";
-          font-family: "Font Awesome 6 Pro";
-          margin-right: 6px;
+          content: "\E01E";
+          font-family: "Iconly" !important;
+          margin-right: 8px;
+          font-size: 10px;
         }
       }
 
@@ -114,6 +121,8 @@
       border: none;
       margin-left: 10px;
       font-size: 12px;
+      display: flex;
+      align-items: center;
 
       i {
         margin-left: 5px;
@@ -199,8 +208,10 @@
       display: flex;
       align-items: center;
 
-      img {
+      i {
         margin-left: 5px;
+        font-size: 24px;
+        color: $color1;
       }
 
       span {
@@ -226,8 +237,10 @@
         align-items: center;
         padding: 10px 0;
 
-        img {
+        i {
           margin-left: 5px;
+          font-size: 24px;
+          color: rgba(50, 50, 50, 1);
         }
 
         span {
@@ -244,10 +257,11 @@
       color: rgba(15, 148, 242, 1);
       display: flex;
       align-items: center;
-      font-weight: bold;
+      font-weight: 400;
 
       i {
         margin-right: 10px;
+        font-size: 10px;
       }
     }
 
@@ -326,7 +340,9 @@
     }
   }
 }
-
+.icon-star{
+  font-size: 12px;
+}
 .product-left-box {
   border: 1px solid rgba(232, 234, 237, 1);
   border-radius: 12px;
@@ -379,6 +395,14 @@
     padding: 5px 0;
     font-size: var(--fontSize);
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    i{
+      margin-left: 8px;
+      font-size: 19px;
+      color: $color1;
+    }
   }
 
   .user-info {
@@ -418,8 +442,10 @@
     padding: 15px 0;
     li{
       padding: 7px 0;
+      display: flex;
+      align-items: center;
 
-      i,img{
+      i{
         color: $color1;
         margin-left: 5px;
       }
