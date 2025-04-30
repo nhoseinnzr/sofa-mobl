@@ -66,8 +66,15 @@ $('.owl-products').owlCarousel({
 
 })
 $('body').on('click','.div-more .btn',function (){
-    $(this).parents('.tags').addClass('expand')
+    $(this).closest('.tags').addClass('expand')
 
-
+})
+$('body').on('click','#menu-item-responsive',function(){
+    $('.menu-responsive').toggleClass('active');
+    $(this).toggleClass('active');
+})
+$('body').on('click','#close-menu',function(){
+    $('.menu-responsive').removeClass('active');
+    $('#menu-item-responsive').removeClass('active');
 })
 

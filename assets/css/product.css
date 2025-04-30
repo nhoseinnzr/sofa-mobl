@@ -171,19 +171,21 @@ input:focus {
   align-items: center;
   z-index: 2;
 }
-.bottom-menu a {
+.bottom-menu a, .bottom-menu button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   color: rgb(186, 189, 194);
   width: 25%;
+  background: transparent;
+  border: none;
 }
-.bottom-menu a span {
+.bottom-menu a span, .bottom-menu button span {
   text-align: center;
   width: 100%;
   margin-top: 5px;
 }
-.bottom-menu a i {
+.bottom-menu a i, .bottom-menu button i {
   font-size: 20px;
   width: 30px;
   height: 30px;
@@ -191,7 +193,7 @@ input:focus {
   align-items: center;
   justify-content: center;
 }
-.bottom-menu a.active {
+.bottom-menu a.active, .bottom-menu button.active {
   color: #11205A;
 }
 

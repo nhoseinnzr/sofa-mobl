@@ -216,7 +216,60 @@ header {
   color: #3e3e3e;
 }
 
+.menu-responsive {
+  display: none;
+}
+
 @media (max-width: 767px) {
+  .menu-responsive {
+    display: block;
+    position: fixed;
+    bottom: -120%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 2;
+    transition: all ease 0.2s;
+    height: 100%;
+  }
+  .menu-responsive.active {
+    bottom: 0;
+  }
+  .menu-responsive .title {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  .menu-responsive .title span {
+    font-size: 16px;
+    color: rgb(20, 21, 24);
+    margin-left: auto;
+  }
+  .menu-responsive .title i {
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .menu-responsive .list-menu {
+    max-height: calc(100vh - 183px);
+    overflow: auto;
+  }
+  .menu-responsive .list-menu li {
+    padding: 20px 2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(232, 234, 237);
+  }
+  .menu-responsive .list-menu li:last-child {
+    border-bottom: none;
+  }
+  .menu-responsive .list-menu li span {
+    font-size: 14px;
+    color: rgb(20, 21, 24);
+  }
+  .menu-responsive .list-menu li i {
+    margin-right: auto;
+    font-size: 10px;
+  }
   .row-menus {
     display: none;
   }

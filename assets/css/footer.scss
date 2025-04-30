@@ -115,12 +115,14 @@
   align-items: center;
   z-index: 2;
 
-  a {
+  a , button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     color: rgba(186, 189, 194, 1);
     width: 25%;
+    background: transparent;
+    border: none;
 
     span {
       text-align: center;
