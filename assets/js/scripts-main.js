@@ -16,6 +16,24 @@ $('.owl-carousel2').owlCarousel({
         }
     }
 })
+$('.owl-similar').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsiveClass: true,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        767: {
+            items: 3,
+        },
+        1000: {
+            items: 6,
+        }
+    }
+})
 $('.owl-blog').owlCarousel({
     loop: true,
     margin: 10,

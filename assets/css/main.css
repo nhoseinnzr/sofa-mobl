@@ -223,6 +223,7 @@ input:focus {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  width: 20%;
 }
 .footer .top-footer .box-footer img {
   margin-left: 5px;
@@ -331,15 +332,20 @@ input:focus {
   justify-content: center;
 }
 .bottom-menu a.active, .bottom-menu button.active {
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 
 @media (max-width: 767px) {
+  .footer {
+    padding-bottom: 4rem;
+  }
   .footer .top-footer {
     order: 1;
   }
   .footer .top-footer .box-footer {
     margin: 10px 0;
+    width: 50%;
+    padding: 5px;
   }
   .footer .menu1 {
     order: 2;
@@ -419,7 +425,7 @@ input:focus {
   text-align: center;
   font-size: 32px;
   font-weight: 600;
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 
 .category-box {
@@ -546,7 +552,7 @@ input:focus {
 }
 .section-why .text h2 {
   font-size: 44px;
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 .section-why .text h2 em {
   font-weight: bold;
@@ -564,7 +570,7 @@ input:focus {
 }
 .title h2 {
   font-size: 27px;
-  color: #11205A;
+  color: rgb(17, 32, 90);
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -597,13 +603,13 @@ input:focus {
 }
 .box-why .icon i {
   font-size: 45px;
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 .box-why span {
   text-align: center;
   display: block;
   margin-top: 15px;
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 
 .swiper-slide {
@@ -649,7 +655,7 @@ input:focus {
 .section-images .box-image2 .text h5, .section-images .box-image3 .text h5 {
   font-weight: bold;
   font-size: 24px;
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 .section-images .box-image2 .btn2, .section-images .box-image3 .btn2 {
   background: #fff;
@@ -773,7 +779,7 @@ input:focus {
 }
 .section-blog .blog-item p a {
   background: #fff;
-  color: #11205A;
+  color: rgb(17, 32, 90);
   position: absolute;
   bottom: 0;
   left: 0;

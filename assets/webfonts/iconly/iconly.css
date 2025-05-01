@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1746030018540");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1746030018540") format("woff2"), url("./iconly.woff?1746030018540") format("woff"), url("./iconly.ttf?1746030018540") format("truetype"), url("./iconly.svg?1746030018540#Iconly") format("svg");
+  src: url("./iconly.eot?1746116403550");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1746116403550") format("woff2"), url("./iconly.woff?1746116403550") format("woff"), url("./iconly.ttf?1746116403550") format("truetype"), url("./iconly.svg?1746116403550#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -225,4 +225,28 @@
 
 .icon-cancel:before {
   content: "\e032";
+}
+
+.icon-minus-square:before {
+  content: "\e033";
+}
+
+.icon-similar:before {
+  content: "\e034";
+}
+
+.icon-users:before {
+  content: "\e035";
+}
+
+.icon-description:before {
+  content: "\e036";
+}
+
+.icon-cash:before {
+  content: "\e037";
+}
+
+.icon-image:before {
+  content: "\e038";
 }

@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-input:focus {
+input:focus , textarea:focus {
   outline: none;
 }
 
@@ -93,7 +93,7 @@ header {
 .row-top .search-box .category {
   padding: 8px 16px;
   border-radius: 8px;
-  background: #11205A;
+  background: rgb(17, 32, 90);
   display: flex;
   align-items: center;
   color: #fff;
@@ -113,8 +113,8 @@ header {
 .row-top .btn-login {
   margin-right: auto;
   border-radius: 8px;
-  border: 1px solid #11205A;
-  color: #11205A;
+  border: 1px solid rgb(17, 32, 90);
+  color: rgb(17, 32, 90);
   font-size: var(--fontSize);
   display: flex;
   align-items: center;
@@ -162,7 +162,7 @@ header {
 .row-menus ul.menus > li em {
   font-size: 24px;
   margin-left: 8px;
-  color: #11205A;
+  color: rgb(17, 32, 90);
 }
 .row-menus ul.menus > li .sub-menu {
   position: absolute;
