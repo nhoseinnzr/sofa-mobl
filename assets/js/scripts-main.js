@@ -89,10 +89,35 @@ $('body').on('click','.div-more .btn',function (){
 })
 $('body').on('click','#menu-item-responsive',function(){
     $('.menu-responsive').toggleClass('active');
+    $('.bottom-menu .a').removeClass('active')
+    $('.category-responsive').removeClass('active');
     $(this).toggleClass('active');
 })
+$('body').on('click','#menu-category-responsive',function(){
+    $('.menu-responsive').removeClass('active');
+    $('.bottom-menu .a').removeClass('active')
+    $('.category-responsive').toggleClass('active');
+    $(this).toggleClass('active');
+
+})
+$('body').on('click','#close-category',function(){
+
+    $('.category-responsive').removeClass('active');
+    $('#menu-category-responsive').removeClass('active');
+})
+
 $('body').on('click','#close-menu',function(){
+
     $('.menu-responsive').removeClass('active');
     $('#menu-item-responsive').removeClass('active');
+})
+
+$('body').on('click','.right-cat .category-item',function(){
+   $('.category-item').removeClass('active');
+   $('.left-cat .row').addClass('d-none');
+   $(this).addClass('active');
+   let id = $(this).attr('data-cat')
+    $('#'+id).removeClass('d-none')
+
 })
 
