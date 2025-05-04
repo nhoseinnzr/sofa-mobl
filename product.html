@@ -955,19 +955,19 @@
 
     <div class="bottom-menu">
 
-        <a href="#" class="active">
+        <a href="#" class="active a">
             <i class="icon-home-dash"></i>
             <span>خانه</span>
         </a>
-        <button id="menu-item-responsive">
+        <button class="a" id="menu-item-responsive">
             <i class="icon-menu"></i>
             <span>منو</span>
         </button>
-        <a href="#">
+        <button class="a" id="menu-category-responsive">
             <i class="icon-grid-square-circle"></i>
             <span>دسته‌بندی</span>
-        </a>
-        <a href="#">
+        </button>
+        <a class="a" href="#">
             <i class="icon-user"></i>
             <span>پروفایل</span>
         </a>
@@ -989,7 +989,347 @@
 
 
     </div>
+    <div class="category-responsive">
+        <div class="title-cat">
+            <div class="input-search">
+                <i class="icon-search"></i>
+                <input type="text" placeholder="مدل مبل،رنگ یا تولیدی مورد نظر را جستجو کنید"/>
+            </div>
+            <i id="close-category" class="icon-cancel "></i>
+        </div>
+        <div class="list-category">
+            <div class="right-cat">
+                <div data-cat="cat-mobl" class="category-item active">
+                    <i class="icon-group1"></i>
+                    <span>مبلمان</span>
+                </div>
+                <div data-cat="cat-sleeping-service" class="category-item">
+                    <i class="icon-group2"></i>
+                    <span>سرویس خواب</span>
+                </div>
+                <div data-cat="cat-dining-table" class="category-item">
+                    <i class="icon-group3"></i>
+                    <span>میز ناهارخوری</span>
+                </div>
+                <div data-cat="cat-console" class="category-item">
+                    <i class="icon-group4"></i>
+                    <span>میز و کنسول</span>
+                </div>
+                <div data-cat="cat-count" class="category-item">
+                    <i class="icon-group6"></i>
+                    <span>تعداد نفرات</span>
+                </div>
+                <div data-cat="cat-location" class="category-item">
+                    <i class="icon-location-pin"></i>
+                    <span>بازارهای مبلمان</span>
+                </div>
+            </div>
+            <div class="left-cat">
+                <div id="cat-mobl" class="row">
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat2.png" alt="">
+                            </div>
+                            <span>مبل راحتی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat3.png" alt="">
+                            </div>
+                            <span>مبل چستر</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat1.png" alt="">
+                            </div>
+                            <span>مبل کلاسیک</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat4.png" alt="">
+                            </div>
+                            <span>مبل ال</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat6.png" alt="">
+                            </div>
+                            <span>مبل مینیمال</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat5.png" alt="">
+                            </div>
+                            <span>مبل سلطنتی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat13.png" alt="">
+                            </div>
+                            <span>مبل تخت خوابشو</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat14.png" alt="">
+                            </div>
+                            <span>پاف</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat15.png" alt="">
+                            </div>
+                            <span>لاولی بد</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat9.png" alt="">
+                            </div>
+                            <span>مبلمان باغی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat20.png" alt="">
+                            </div>
+                            <span>صندلی راک</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat17.png" alt="">
+                            </div>
+                            <span>مبل فرانسوی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat16.png" alt="">
+                            </div>
+                            <span>مبل لاکچری</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat19.png" alt="">
+                            </div>
+                            <span>مبل اقتصادی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat18.png" alt="">
+                            </div>
+                            <span>مبل اقساطی</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat-sleeping-service" class="row d-none">
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat7.png" alt="">
+                            </div>
+                            <span>سرویس خواب دو نفره</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat21.png" alt="">
+                            </div>
+                            <span>سرویس خواب سلطنتی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat12.png" alt="">
+                            </div>
+                            <span>سیسمونی نوزاد</span>
+                        </div>
+                    </div>
 
+                </div>
+                <div id="cat-dining-table" class="row d-none">
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat23.png" alt="">
+                            </div>
+                            <span>میز ناهارخوری 4 نفره</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat22.png" alt="">
+                            </div>
+                            <span>میز ناهارخوری ۶ نفره</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="cat-console" class="row d-none">
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat11.png" alt="">
+                            </div>
+                            <span>میز تلویزیون</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat8.png" alt="">
+                            </div>
+                            <span>آینه و کنسول</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat24.png" alt="">
+                            </div>
+                            <span>میز جلو مبلی وعسلی</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat11.png" alt="">
+                            </div>
+                            <span>ست میز تلویزیونو کنسول</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat8.png" alt="">
+                            </div>
+                            <span>آینه و کنسول</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="cat-count" class="row d-none">
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat25.png" alt="">
+                            </div>
+                            <span>مبل راحتی ۷ نفره</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat26.png" alt="">
+                            </div>
+                            <span>مبل راحتی ۸ نفره</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat30.png" alt="">
+                            </div>
+                            <span>مبل راحتی ۵ نفره</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat27.png" alt="">
+                            </div>
+                            <span>مبل استیل و سلطنتی۷ نفره</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <img src="assets/images/categories/cat29.png" alt="">
+                            </div>
+                            <span>مبل استیل و سلطنتی۸ نفره</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="cat-location" class="row d-none">
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <i class="icon-location"></i>
+                            </div>
+                            <span>بازار یافت آباد</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <i class="icon-location"></i>
+                            </div>
+                            <span>بازار چهاردانگه</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <i class="icon-location"></i>
+                            </div>
+                            <span>بازار دلاوران</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <i class="icon-location"></i>
+                            </div>
+                            <span>رباط کریم</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="item-cat">
+                            <div class="img">
+                                <i class="icon-location"></i>
+                            </div>
+                            <span>شهرک ولیعصر</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
 
     <div class="modal modal-comment" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
