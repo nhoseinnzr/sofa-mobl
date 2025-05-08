@@ -1,0 +1,72 @@
+:root {
+  --fontSize: 14px;
+}
+
+body {
+  direction: rtl;
+  font-size: var(--fontSize);
+  font-family: dana, serif;
+  color: #3e3e3e;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+
+.btn {
+  font-size: var(--fontSize);
+}
+
+em, i {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1281px;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --fontSize: 12px;
+  }
+}
+.breadcrumb-custom ul {
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-custom ul li {
+  padding: 10px 6px;
+}
+.breadcrumb-custom ul li span {
+  color: rgb(159, 161, 166);
+  display: flex;
+  align-items: center;
+}
+.breadcrumb-custom ul li span:after {
+  content: "\e01e";
+  font-family: "Iconly" !important;
+  margin-right: 8px;
+  font-size: 10px;
+}
+.breadcrumb-custom ul li a {
+  color: #3e3e3e;
+}
+
+/*# sourceMappingURL=global.css.map */
