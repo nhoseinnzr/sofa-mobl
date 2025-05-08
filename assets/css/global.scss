@@ -1,0 +1,126 @@
+@use './variables' as *;
+@import "bootstrap.min.css";
+@import "font";
+@import '../webfonts/iconly/iconly.min.css';
+@import "header.css";
+@import "footer";
+.breadcrumb-custom {
+  ul {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 28px;
+
+    li {
+      padding: 10px 6px;
+
+      span {
+        color: rgba(159, 161, 166, 1);
+        display: flex;
+        align-items: center;
+
+        &:after {
+          content: "\E01E";
+          font-family: "Iconly" !important;
+          margin-right: 8px;
+          font-size: 10px;
+        }
+      }
+
+      a {
+        color: $blackColor;
+      }
+    }
+  }
+}
+.card-product {
+  padding: 5px;
+  border: 1px solid rgba(232, 234, 237, 1);
+  direction: rtl;
+
+  img {
+    max-width: 100%;
+  }
+
+  .card-body {
+    padding: 10px 5px;
+
+    p {
+      display: flex;
+      align-items: center;
+      color: rgba(156, 156, 171, 1) !important;
+      padding: 5px 0;
+      font-size: 12px;
+
+      i {
+        font-size: 16px;
+        color: rgba(126, 128, 133, 1);
+      }
+    }
+
+    span.city {
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+
+      i {
+        margin-left: 5px;
+        font-size: 14px;
+        color: rgba(55, 205, 250, 1);
+      }
+    }
+
+    .star-span {
+      display: flex;
+      align-items: center;
+      direction: ltr;
+      font-size: 12px;
+      color: rgba(64, 65, 69, 1);
+
+      i {
+        color: rgba(254, 188, 0, 1);
+        margin-right: 5px;
+        font-size: var(--fontSize);
+      }
+    }
+  }
+
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+
+    span {
+      text-align: left;
+      font-size: 12px;
+      color: rgba(152, 153, 154, 1);
+
+      em {
+        font-weight: 400;
+        color: rgba(156, 156, 171, 1);
+      }
+
+    }
+
+    .price-main {
+      font-size: var(--fontSize);
+      color: rgba(12, 13, 13, 1);
+      padding-top: 5px;
+
+      em {
+        font-weight: 400;
+        color: rgba(156, 156, 171, 1);
+      }
+    }
+
+    .precent {
+      background: rgba(242, 85, 85, 1);
+      padding: 4px;
+      border-radius: 4px;
+      color: #fff;
+      display: inline-flex;
+    }
+  }
+}

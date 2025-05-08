@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1746377801426");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1746377801426") format("woff2"), url("./iconly.woff?1746377801426") format("woff"), url("./iconly.ttf?1746377801426") format("truetype"), url("./iconly.svg?1746377801426#Iconly") format("svg");
+  src: url("./iconly.eot?1746695823050");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1746695823050") format("woff2"), url("./iconly.woff?1746695823050") format("woff"), url("./iconly.ttf?1746695823050") format("truetype"), url("./iconly.svg?1746695823050#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -253,4 +253,52 @@
 
 .icon-location:before {
   content: "\e039";
+}
+
+.icon-cat8:before {
+  content: "\e03a";
+}
+
+.icon-cat7:before {
+  content: "\e03b";
+}
+
+.icon-cat6:before {
+  content: "\e03c";
+}
+
+.icon-cat5:before {
+  content: "\e03d";
+}
+
+.icon-cat4:before {
+  content: "\e03e";
+}
+
+.icon-cat3:before {
+  content: "\e03f";
+}
+
+.icon-cat2:before {
+  content: "\e040";
+}
+
+.icon-cat1:before {
+  content: "\e041";
+}
+
+.icon-trash-times:before {
+  content: "\e042";
+}
+
+.icon-angle-down-small:before {
+  content: "\e043";
+}
+
+.icon-check:before {
+  content: "\e044";
+}
+
+.icon-list:before {
+  content: "\e045";
 }

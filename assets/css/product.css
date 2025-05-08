@@ -1,5 +1,4 @@
 @import "bootstrap.min.css";
-@import "all.min.css";
 @import '../webfonts/iconly/iconly.min.css';
 @import "header.css";
 :root {
@@ -28,6 +27,56 @@ ul {
   margin: 0;
   padding: 0;
 }
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1281px;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  :root {
+    --fontSize: 12px;
+  }
+}
+:root {
+  --fontSize: 14px;
+}
+
+body {
+  direction: rtl;
+  font-size: var(--fontSize);
+  font-family: dana, serif;
+  color: #3e3e3e;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}
+
+.btn {
+  font-size: var(--fontSize);
+}
+
+em, i {
+  font-style: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 ul li {
   list-style: none;
 }
@@ -284,41 +333,28 @@ input:focus {
     display: flex;
   }
 }
-[class=icon], [class^=icon-], [class*=" icon-"] {
-  font-size: 20px;
-}
-
-.product {
-  padding: 2rem 0 0;
-}
-
-.title {
+.breadcrumb-custom ul {
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 28px;
 }
-.title h2 {
-  font-size: 27px;
-  color: rgb(17, 32, 90);
-  font-weight: bold;
+.breadcrumb-custom ul li {
+  padding: 10px 6px;
+}
+.breadcrumb-custom ul li span {
+  color: rgb(159, 161, 166);
   display: flex;
   align-items: center;
 }
-.title h2 i {
-  font-size: 29px;
-  color: rgb(185, 149, 80);
-  margin-left: 10px;
+.breadcrumb-custom ul li span:after {
+  content: "\e01e";
+  font-family: "Iconly" !important;
+  margin-right: 8px;
+  font-size: 10px;
 }
-.title .btn-all {
-  margin-right: auto;
-  padding: 10px 15px;
-  border: 1px solid rgb(44, 45, 48);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-}
-.title .btn-all i {
-  margin-right: 10px;
+.breadcrumb-custom ul li a {
+  color: #3e3e3e;
 }
 
 .card-product {
@@ -345,9 +381,13 @@ input:focus {
 }
 .card-product .card-body span.city {
   font-size: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
 }
 .card-product .card-body span.city i {
   margin-left: 5px;
+  font-size: 14px;
   color: rgb(55, 205, 250);
 }
 .card-product .card-body .star-span {
@@ -394,26 +434,41 @@ input:focus {
   display: inline-flex;
 }
 
-.breadcrumb-custom ul {
+[class=icon], [class^=icon-], [class*=" icon-"] {
+  font-size: 20px;
+}
+
+.product {
+  padding: 2rem 0 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.title h2 {
+  font-size: 27px;
+  color: rgb(17, 32, 90);
+  font-weight: bold;
   display: flex;
   align-items: center;
 }
-.breadcrumb-custom ul li {
-  padding: 10px 6px;
+.title h2 i {
+  font-size: 29px;
+  color: rgb(185, 149, 80);
+  margin-left: 10px;
 }
-.breadcrumb-custom ul li span {
-  color: rgb(159, 161, 166);
+.title .btn-all {
+  margin-right: auto;
+  padding: 10px 15px;
+  border: 1px solid rgb(44, 45, 48);
+  border-radius: 8px;
   display: flex;
   align-items: center;
 }
-.breadcrumb-custom ul li span:after {
-  content: "\e01e";
-  font-family: "Iconly" !important;
-  margin-right: 8px;
-  font-size: 10px;
-}
-.breadcrumb-custom ul li a {
-  color: #3e3e3e;
+.title .btn-all i {
+  margin-right: 10px;
 }
 
 .images-section {
