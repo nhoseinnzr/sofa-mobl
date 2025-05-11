@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forget</title>
+  <link rel="stylesheet" href="../assets/css/font.css">
+  <link rel="stylesheet" href="../assets/css/auth/login.css">
+  <script src="../assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="auth-section">
+  <div class="right-auth">
+    <button class="btn-return d-md-none ">بازگشت <i class="icon-angle-down-small-2"></i></button>
+    <div class="logo d-md-none">
+      <img src="../assets/images/logo.png" alt=logo">
+    </div>
+    <div class="form forget-form">
+      <div class="title-login">
+        <h4>بازیابی کلمه عبور</h4>
+        <span>برای بازیابی کلمه عبور ایمیل خود را وارد کنید</span>
+      </div>
+
+
+        <div class="logon-tab ">
+          <div class="input-box pb-0">
+            <label>ایمیل<em>*</em></label>
+            <div class="input">
+              <i class="icon-envelope"></i>
+              <input type="text" placeholder="مثال: example@mail.com" />
+            </div>
+          </div>
+
+
+          <div class="btn-div">
+            <button>ارسال لینک بازیابی کلمه عبور</button>
+          </div>
+        </div>
+
+      </div>
+
+
+  </div>
+  <div class="left-image left-forget">
+    <div class="logo">
+      <img src="../assets/images/logo.png" alt=logo">
+    </div>
+    <img src="../assets/images/login.png" alt="login">
+  </div>
+
+
+</div>
+<script>
+  $(document).ready(function () {
+
+
+    $('.tab span').on('click', function () {
+      const tab = $(this).data('tab');
+
+      $('.tab span').removeClass('active');
+      $(this).addClass('active');
+
+      const isLogin = tab === 'login';
+
+      $('.logon-tab').toggleClass('d-none', !isLogin);
+      $('.register-tab').toggleClass('d-none', isLogin);
+      $('.right-auth .form').toggleClass('mt-5', !isLogin);
+      $('.form .input-box').css('padding', isLogin ? '16px' : '10px');
+    });
+  });
+</script>
+
+
+</body>
+</html>

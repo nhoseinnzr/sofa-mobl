@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/css/font.css">
+    <link rel="stylesheet" href="../assets/css/auth/login.css">
+    <script src="../assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="auth-section">
+
+    <div class="right-auth">
+        <button class="btn-return d-md-none ">بازگشت <i class="icon-angle-down-small-2"></i></button>
+        <div class="logo d-md-none">
+            <img src="../assets/images/logo.png" alt=logo">
+        </div>
+        <div class="form">
+           <div class="title-login">
+               <h4>به سوفامبل  خوش آمدید!</h4>
+               <span>برای دسترسی به خدمات واردشوید یا ثبت نام کنید</span>
+
+               <div class="tab">
+                   <span data-tab="login" class="active">ورود</span>
+                   <span data-tab="register">ثبت نام</span>
+
+               </div>
+
+               <div class="logon-tab ">
+                   <div class="input-box">
+                       <label>ایمیل<em>*</em></label>
+                    <div class="input">
+                        <i class="icon-envelope"></i>
+                        <input type="text" placeholder="مثال: example@mail.com" />
+                    </div>
+                   </div>
+                   <div class="input-box">
+                       <label>کلمه عبور<em>*</em></label>
+                    <div class="input">
+                        <i class="icon-lock"></i>
+                        <input type="text" placeholder="کلمه عبور را وارد کنید" />
+                    </div>
+                   </div>
+                   
+                   <div class="forget-box">
+                       <div class="check-box">
+                           <input id="check-forget" type="checkbox"/>
+                           <label for="check-forget">مرا به خاطر بسپار</label>
+                       </div>
+                       <a href="">کلمه عبور را فراموش کرده‌اید؟</a>
+                   </div>
+
+                   <div class="btn-div">
+                       <button>ورود به حساب کاربری</button>
+                   </div>
+               </div>
+               <div class="register-tab d-none">
+                   <div class="input-box">
+                       <label>نام و نام خانوادگی</label>
+                       <div class="input">
+                           <i class="icon-envelope"></i>
+                           <input type="text" placeholder="مثال: امید فرخی" />
+                       </div>
+                   </div>
+                   <div class="input-box">
+                       <label>شماره موبایل<em>*</em></label>
+                       <div class="input">
+                           <i class="icon-mobile"></i>
+                           <input type="text" placeholder="شماره موبایل خود را وارد کنید" />
+                       </div>
+                   </div>
+                   <div class="input-box">
+                       <label> ایمیل<em>*</em></label>
+                       <div class="input">
+                           <i class="icon-envelope"></i>
+                           <input type="text" placeholder="مثال: example@mail.com" />
+                       </div>
+                   </div>
+                   <div class="input-box">
+                       <label> کلمه عبور<em>*</em></label>
+                       <div class="input">
+                           <i class="icon-lock"></i>
+                           <input type="text" placeholder="کلمه عبور را وارد کنید" />
+                       </div>
+                   </div>
+                   <div class="input-box">
+                       <label>تایید کلمه عبور<em>*</em></label>
+                       <div class="input">
+                           <i class="icon-lock"></i>
+                           <input type="text" placeholder="کلمه عبور را وارد کنید" />
+                       </div>
+                   </div>
+                   <div class="rule-div">
+
+                       <div class="check-box">
+                           <input id="check-rule" type="checkbox"/>
+                           <label for="check-rule"><a href="">شرایط و قوانین</a> سوفامبل را خواندم و میپذیرم</label>
+                       </div>
+                   </div>
+
+
+                   <div class="btn-div">
+                       <button>ثبت نام</button>
+                   </div>
+               </div>
+           </div>
+
+        </div>
+    </div>
+    <div class="left-image">
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt=logo">
+        </div>
+        <img src="../assets/images/login.png" alt="login">
+    </div>
+
+
+</div>
+<script>
+    $(document).ready(function () {
+
+
+
+        $('.tab span').on('click', function () {
+            const tab = $(this).data('tab');
+
+            $('.tab span').removeClass('active');
+            $(this).addClass('active');
+
+            const isLogin = tab === 'login';
+
+            $('.logon-tab').toggleClass('d-none', !isLogin);
+            $('.register-tab').toggleClass('d-none', isLogin);
+            $('.right-login .form').toggleClass('mt-5', !isLogin);
+            $('.form .input-box').css('padding', isLogin ? '16px' : '10px');
+        });
+    });
+</script>
+
+
+</body>
+</html>

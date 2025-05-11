@@ -1,0 +1,283 @@
+@use '../variables' as *;
+@import "../bootstrap.min.css";
+@import '../../webfonts/iconly/iconly.min.css';
+@import "../global";
+
+.auth-section {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .right-auth {
+    width: 55%;
+    height: 100vh;
+    overflow: auto;
+    direction: ltr;
+    padding-bottom: 25px;
+
+
+    .form {
+      max-width: 527px;
+      margin: 160px auto 0;
+      direction: rtl;
+
+      .title-login {
+        text-align: center;
+
+        h4 {
+          font-size: 20px;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 1);
+        }
+
+        span {
+          color: rgba(126, 128, 133, 1);
+          font-size: 20px;
+        }
+
+        .tab {
+          background: rgba(248, 249, 250, 1);
+          border-radius: 16px;
+          padding: 8px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin-top: 39px;
+          margin-bottom: 20px;
+
+          span {
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            font-size: 16px;
+            cursor: pointer;
+
+            &.active {
+              background: $color1;
+              padding: 10px;
+              border-radius: 8px;
+              color: #fff;
+              cursor: default;
+            }
+          }
+        }
+      }
+
+      .logon-tab {
+        width: 100%;
+      }
+
+      .input-box {
+        width: 100%;
+        padding: 16px 0;
+
+        label {
+          width: 100%;
+          text-align: right;
+          font-size: 14px;
+          color: rgba(64, 65, 69, 1);
+          margin-bottom: 8px;
+
+          em {
+            color: rgba(242, 50, 63, 1);
+          }
+        }
+
+        .input {
+          width: 100%;
+          background: rgba(253, 253, 254, 1);
+          border: 1px solid rgba(227, 227, 232, 1);
+          border-radius: 8px;
+          position: relative;
+          display: flex;
+          align-items: center;
+          height: 56px;
+
+          i {
+            position: absolute;
+            right: 23px;
+            font-size: 19px;
+          }
+
+          input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            padding-right: 55px;
+
+
+          }
+        }
+      }
+
+      &.forget-form {
+        .title-login {
+          text-align: right;
+          padding-bottom: 20px;
+        }
+      }
+
+    }
+  }
+
+  .left-image {
+    width: 45%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.8) 13.29%, rgba(255, 255, 255, 0) 57.81%);
+
+    }
+
+    .logo {
+      width: 250px;
+      max-width: 100%;
+      position: absolute;
+      margin-top: 54px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .forget-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+
+    a {
+      margin-right: auto;
+      color: #0F7AE6;
+      text-decoration: underline;
+    }
+  }
+
+  .btn-div {
+    width: 100%;
+    margin-top: 40px;
+
+    button {
+      width: 100%;
+      border-radius: 8px;
+      padding: 10px;
+      background: $color1;
+      border: none;
+      height: 56px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all ease .4s;
+
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+
+  .rule-div {
+    a {
+      margin-left: 3px;
+      color: rgba(15, 122, 230, 1);
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    .left-image {
+      display: none;
+    }
+    .right-auth {
+      width: 100%;
+
+      .btn-return {
+        background: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 42px;
+        margin-right: 25px;
+        font-size: 14px;
+        font-weight: 400;
+
+        i {
+          margin-left: 14px;
+          font-size: 10px;
+        }
+      }
+
+      .logo {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 42px;
+        padding-top: 52px;
+
+        img {
+          max-width: 148px;
+        }
+      }
+
+      .form {
+        margin-top: 0;
+
+        .title-login {
+          padding: 0 16px;
+
+          .tab {
+            height: 60px;
+
+            span {
+              height: 44px;
+            }
+          }
+
+          h4 {
+            font-size: 16px;
+          }
+
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .input-box {
+          .input {
+              height: 44px;
+
+          }
+        }
+      }
+
+    }
+    .btn-div button {
+      height: 44px;
+    }
+    .logon-tab{
+      padding: 0 16px;
+    }
+
+  }
+}
