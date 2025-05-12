@@ -173,7 +173,19 @@
   z-index: 3;
   display: none;
 }
+.modal-responsive{
+  display:none ;
+}
+.icon-filter{
+  display: none;
+}
 @media (max-width: 767px) {
+  .icon-filter{
+    display: inline-block;
+  }
+  .modal-responsive{
+    display:block ;
+  }
   .breadcrumb-custom{
     ul{
       margin: 10px 0 ;

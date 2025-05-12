@@ -916,8 +916,43 @@
 
         </div>
     </footer>
+    <div class="bottom-price">
+        <button class="btn btn-phone">
+            <i class="icon-phone-flip"></i>
+            نمایش شماره تماس
+        </button>
+        <div class="price ">
+            <h5>27,000,000 <em>تومانءءء</em></h5>
+            <span>۳۵٬۰۰۰٬۰۰۰</span>
 
-    <div class="menu-responsive">
+            <div class="discount">
+                20%
+            </div>
+        </div>
+
+
+    </div>
+    <div class="bottom-menu">
+
+        <a href="#" class="active a">
+            <i class="icon-home-dash"></i>
+            <span>خانه</span>
+        </a>
+        <button data-modal-click data-modal="menu-modal" class="a" id="menu-item-responsive">
+            <i class="icon-menu"></i>
+            <span>منو</span>
+        </button>
+        <button data-modal-click data-modal="category-modal" class="a" id="menu-category-responsive">
+            <i class="icon-grid-square-circle"></i>
+            <span>دسته‌بندی</span>
+        </button>
+        <a class="a" href="#">
+            <i class="icon-user"></i>
+            <span>پروفایل</span>
+        </a>
+
+    </div>
+    <div id="menu-modal" class="modal-responsive">
 
         <div class="title">
             <span>منو</span>
@@ -951,43 +986,7 @@
 
     </div>
 
-    <div class="bottom-menu">
-
-        <a href="#" class="active a">
-            <i class="icon-home-dash"></i>
-            <span>خانه</span>
-        </a>
-        <button class="a" id="menu-item-responsive">
-            <i class="icon-menu"></i>
-            <span>منو</span>
-        </button>
-        <button class="a" id="menu-category-responsive">
-            <i class="icon-grid-square-circle"></i>
-            <span>دسته‌بندی</span>
-        </button>
-        <a class="a" href="#">
-            <i class="icon-user"></i>
-            <span>پروفایل</span>
-        </a>
-
-    </div>
-    <div class="bottom-price">
-        <button class="btn btn-phone">
-            <i class="icon-phone-flip"></i>
-            نمایش شماره تماس
-        </button>
-        <div class="price ">
-            <h5>27,000,000 <em>تومانءءء</em></h5>
-            <span>۳۵٬۰۰۰٬۰۰۰</span>
-
-            <div class="discount">
-                20%
-            </div>
-        </div>
-
-
-    </div>
-    <div class="category-responsive">
+    <div id="category-modal" class="modal-responsive">
         <div class="title-cat">
             <div class="input-search">
                 <i class="icon-search"></i>
@@ -1451,6 +1450,7 @@
         responsive: {
             0: {
                 items: 2,
+                nav: false,
             },
             767: {
                 items: 3,

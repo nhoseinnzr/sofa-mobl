@@ -1035,8 +1035,27 @@ background: radial-gradient(circle, rgba(106, 205, 255, 1) 0%, rgba(17, 32, 90, 
 
         </div>
     </footer>
+    <div class="bottom-menu">
 
-    <div class="menu-responsive">
+        <a href="#" class="active a">
+            <i class="icon-home-dash"></i>
+            <span>خانه</span>
+        </a>
+        <button data-modal-click data-modal="menu-modal" class="a" id="menu-item-responsive">
+            <i class="icon-menu"></i>
+            <span>منو</span>
+        </button>
+        <button data-modal-click data-modal="category-modal" class="a" id="menu-category-responsive">
+            <i class="icon-grid-square-circle"></i>
+            <span>دسته‌بندی</span>
+        </button>
+        <a class="a" href="#">
+            <i class="icon-user"></i>
+            <span>پروفایل</span>
+        </a>
+
+    </div>
+    <div id="menu-modal" class="modal-responsive">
 
         <div class="title">
             <span>منو</span>
@@ -1069,7 +1088,7 @@ background: radial-gradient(circle, rgba(106, 205, 255, 1) 0%, rgba(17, 32, 90, 
         </ul>
 
     </div>
-    <div class="category-responsive">
+    <div id="category-modal" class="modal-responsive">
         <div class="title-cat">
             <div class="input-search">
                 <i class="icon-search"></i>
@@ -1410,26 +1429,7 @@ background: radial-gradient(circle, rgba(106, 205, 255, 1) 0%, rgba(17, 32, 90, 
 
 
     </div>
-    <div class="bottom-menu">
-
-        <a href="#" class="active a">
-            <i class="icon-home-dash"></i>
-            <span>خانه</span>
-        </a>
-        <button class="a" id="menu-item-responsive">
-            <i class="icon-menu"></i>
-            <span>منو</span>
-        </button>
-        <button class="a" id="menu-category-responsive">
-            <i class="icon-grid-square-circle"></i>
-            <span>دسته‌بندی</span>
-        </button>
-        <a class="a" href="#">
-            <i class="icon-user"></i>
-            <span>پروفایل</span>
-        </a>
-
-    </div>
+    <div class="dark-bg"></div>
 </div>
 
 

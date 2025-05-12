@@ -3,7 +3,6 @@
 @import "bootstrap.min.css";
 @import "font";
 @import '../webfonts/iconly/iconly.min.css';
-@import "slider";
 @import "header.css";
 @import "footer";
 
@@ -222,6 +221,7 @@
   border-radius: 12px;
   margin-top: 42px;
   padding: 16px;
+  display: block;
   .titr{
     display: flex;
     align-items: center;
@@ -232,6 +232,7 @@
       font-weight: 700;
       color: rgba(20, 21, 24, 1);
     }
+
     button{
       background: transparent;
       font-size: 16px;
@@ -547,6 +548,7 @@
     display: none;
   }
   .filters-section{
+
     .titr{
       flex-wrap: wrap;
       span{
@@ -565,7 +567,8 @@
           font-size: 16px;
         }
       }
-      i{
+      .icon-cancel{
+        display: block;
         color: #222;
       }
     }

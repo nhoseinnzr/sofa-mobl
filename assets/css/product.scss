@@ -1,5 +1,10 @@
 @use './variables' as *;
 @import "global";
+@import "bootstrap.min.css";
+@import "font";
+@import '../webfonts/iconly/iconly.min.css';
+@import "header.css";
+@import "footer";
 
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -1121,7 +1126,9 @@
 }
 
 @media (max-width: 767px) {
-
+  .owl-carousel .owl-nav.disabled {
+    display: none !important;
+  }
   .breadcrumb-custom {
     ul {
       overflow: auto;
