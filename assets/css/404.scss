@@ -1,0 +1,54 @@
+@import "global";
+@import "font";
+@import '../webfonts/iconly/iconly.min.css';
+
+
+.main-404 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .text{
+    margin: 35px 0;
+    h1{
+      font-size: 32px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      border-radius: 8px;
+      background: rgba(248, 249, 250, 1);
+      padding: 10px;
+      color: rgba(17, 32, 90, 1);
+      margin: 0 5px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .main-404 {
+
+    .text{
+      margin: 35px 0;
+      h1{
+        font-size: 16px;
+      }
+    }
+
+  }
+}

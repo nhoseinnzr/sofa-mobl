@@ -7,8 +7,8 @@
   font-family: "Iconly";
   font-style: normal;
   font-weight: 400;
-  src: url("./iconly.eot?1746976917752");
-  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1746976917752") format("woff2"), url("./iconly.woff?1746976917752") format("woff"), url("./iconly.ttf?1746976917752") format("truetype"), url("./iconly.svg?1746976917752#Iconly") format("svg");
+  src: url("./iconly.eot?1749106168985");
+  src: url("./iconly.eot?#iefix") format("embedded-opentype"), url("./iconly.woff2?1749106168985") format("woff2"), url("./iconly.woff?1749106168985") format("woff"), url("./iconly.ttf?1749106168985") format("truetype"), url("./iconly.svg?1749106168985#Iconly") format("svg");
 }
 
 [class="icon"], [class^="icon-"], [class*=" icon-"] {
@@ -329,4 +329,36 @@
 
 .icon-angle-down-small-2:before {
   content: "\e04c";
+}
+
+.icon-users-group:before {
+  content: "\e04d";
+}
+
+.icon-user-plus:before {
+  content: "\e04e";
+}
+
+.icon-sofa:before {
+  content: "\e04f";
+}
+
+.icon-phone-call-2:before {
+  content: "\e050";
+}
+
+.icon-note-list-check:before {
+  content: "\e051";
+}
+
+.icon-megaphone:before {
+  content: "\e052";
+}
+
+.icon-chat-dots-notification:before {
+  content: "\e053";
+}
+
+.icon-chart-bar-vertical:before {
+  content: "\e054";
 }

@@ -33,6 +33,11 @@ $('body').on('click','.right-cat .category-item',function(){
 })
 
 $(document).ready(function () {
+    $('body').on('click', '.accordion-box .title', function () {
+        $(this).parent().toggleClass('active')
+        $(this).children('i').toggleClass('icon-minus-square')
+
+    })
     $(document).on('click', '[data-modal-click]', function () {
         $('.modal-responsive').removeClass('active')
         let modal = $(this).data('modal')
